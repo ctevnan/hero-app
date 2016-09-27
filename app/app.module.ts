@@ -16,6 +16,7 @@ import { routing } from './app.routing';
   ],
   declarations: [
     AppComponent,
+    DashboardComponent,
     HeroDetailComponent,
     HeroesComponent
   ],
