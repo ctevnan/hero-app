@@ -18,8 +18,6 @@ const HEROES: Hero[] = [
   { id: 20, name: 'Tornado' }
 ];
 
-heroes = HEROES;
-
 @Component({
   selector: 'my-app',
   template: `
@@ -34,10 +32,10 @@ heroes = HEROES;
     </ul>
     <div *ngIf="selectedHero">    
       <h2>{{selectedHero.name}} details!</h2>
-      <div><label>id: </label>{{SelectedHero.id}}</div>
+      <div><label>id: </label>{{selectedHero.id}}</div>
       <div>
         <label>name: </label>
-        <input [(ngModel)]="SelectedHero.name" placeholder="name"/>
+        <input [(ngModel)]="selectedHero.name" placeholder="name"/>
       </div>
     </div>  
   `,
