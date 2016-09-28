@@ -15,8 +15,8 @@ export class HeroesComponent implements OnInit {
   selectedHero: Hero;
 
   constructor(
-    private router: Router,
-    private heroService: HeroService) { }
+    private heroService: HeroService,
+    private router: Router) { }
 
   getHeroes(): void {
     this.heroService.getHeroes().then(heroes => this.heroes = heroes);
